@@ -2,8 +2,32 @@
 
 For detailed methodology and technical details, please refer to the full paper: [Accelerated Semantic Segmentation of Additively Manufactured Metal Matrix Composites](https://github.com/RandyHaddad/MicroSeg-Semantic-Segmentation/blob/main/MicroSegQ%2B.pdf) (*Expert Systems With Applications*, 251, 2024). This work is a collaborative effort by Mutahar Safdar, Yi Fan Li, and Randy El Haddad, with equal contributions listed by seniority.
 
-**Primary Contributions:**
-Randy's work was instrumental in dataset preparation and refinement, model transfer learning for domain adaptation, and the innovative *Zoom-in Augmentation* technique. This technique, which he pioneered, addresses class imbalance by selectively enhancing focus on rare features within training data. Randy's work set a foundation for accurate segmentation and quantification in MMC datasets and provided scalable methods for improving performance on class-imbalanced datasets, significantly enhancing model robustness in real-world applications.
+### Primary Contributions: Randy El Haddad
+
+Randy's work was foundational in multiple facets of this project, spanning data preprocessing, deep learning model adaptation, and novel augmentation techniques for enhanced performance in class-imbalanced datasets. His contributions include:
+
+1. **Dataset Preparation and Preprocessing**:
+   - Randy led the preprocessing pipeline, transforming raw metallographic images into high-quality, standardized inputs for model training.
+   - Applied advanced filtering techniques to ensure optimal contrast and sharpness in images, improving feature distinguishability and model learning outcomes.
+   - Developed a consistent labeling and annotation workflow to create reliable ground truths, particularly for challenging MMC features like porosities and reinforcement particles.
+   - Implemented methods for artifact reduction, including adaptive background removal and noise reduction, to prevent misclassification in the segmentation model.
+
+2. **Transfer Learning and Deep Learning Model Optimization**:
+   - Randy fine-tuned both convolutional neural networks (CNNs) and Vision Transformers (ViTs) specifically for MMC data, optimizing architectures like U-Net++ and Segformer.
+   - Utilized transfer learning by adapting models pretrained on large datasets to MMC microstructure segmentation, carefully tuning model layers to capture the specific texture and structure of metallographic images.
+   - His work on model selection and hyperparameter tuning significantly improved convergence rates and segmentation accuracy, allowing the models to generalize effectively across variations in MMC microstructures.
+
+3. **Zoom-in Augmentation**:
+   - Randy pioneered the *Zoom-in Augmentation* technique, which selectively amplifies underrepresented classes, particularly rare defects and intricate structural features. This targeted augmentation is essential for addressing class imbalances typical in MMC datasets.
+   - By selectively zooming in on minority classes, this technique provided the model with a balanced training distribution, enhancing robustness and accuracy on challenging segmentation tasks where defects and irregularities are sparse.
+
+4. **Model Fusion Strategy**:
+   - Designed and implemented a model fusion strategy that paired CNN and ViT model predictions, allowing each model to contribute its strengths. This approach provided superior performance in detecting both large-scale background elements and smaller, minority classes, achieving a balanced and accurate segmentation output.
+   - Established a weighted voting system for model fusion, leveraging each model's strengths to achieve reliable predictions on class imbalances, thereby refining segmentation quality across diverse classes.
+
+5. **Quantification and Analysis in MicroSegQ+**:
+   - Randy contributed significantly to integrating quantification metrics in MicroSegQ+, allowing real-time feedback on class distribution and feature size in segmented images.
+   - Developed the system for exporting segmentation masks and quantification reports, enabling seamless data interpretation and further analysis within industry-standard software.
 
 
 ---
