@@ -3,7 +3,8 @@
 For detailed methodology and technical details, please refer to the full paper: [Accelerated Semantic Segmentation of Additively Manufactured Metal Matrix Composites](https://github.com/RandyHaddad/MicroSeg-Semantic-Segmentation/blob/main/MicroSegQ%2B.pdf) (*Expert Systems With Applications*, 251, 2024). This work is a collaborative effort by Mutahar Safdar, Yi Fan Li, and Randy El Haddad, with equal contributions listed by seniority.
 
 **Primary Contributions:**
-- Randy El Haddad's main focus included dataset preparation, transfer learning, and a novel *Zoom-in Augmentation* approach that effectively addresses class imbalance in datasets.
+Randy's work was instrumental in dataset preparation and refinement, model transfer learning for domain adaptation, and the innovative *Zoom-in Augmentation* technique. This technique, which he pioneered, addresses class imbalance by selectively enhancing focus on rare features within training data. Randy's work set a foundation for accurate segmentation and quantification in MMC datasets and provided scalable methods for improving performance on class-imbalanced datasets, significantly enhancing model robustness in real-world applications.
+
 
 ---
 
